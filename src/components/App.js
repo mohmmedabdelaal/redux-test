@@ -1,4 +1,5 @@
 import React from 'react';
+import SongDetails from './SongDetails';
 import SongList from './SongList';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       </div>
       <div className="section-center">
         <SongList />
+        <SongDetails />
       </div>
     </section>
   );
