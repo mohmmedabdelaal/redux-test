@@ -1,6 +1,7 @@
 import React from 'react';
-
 import SongList from './SongList';
+import { connect } from 'react-redux';
+import { selectSong } from '../actions';
 
 const App = () => {
   return (
@@ -10,4 +11,12 @@ const App = () => {
   );
 };
 
-export default App;
+const mapStateToProps = (state) => {
+  return {};
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {};
+};
+
+export default connect(mapDispatchToProps, mapStateToProps)(App);

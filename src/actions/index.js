@@ -1,8 +1,10 @@
+import { SONG_SELECTED } from '../types';
+
 // Action creator
-export const selectSong = song => {
+export const selectSong = (song) => {
   // Return an action
   return {
-    type: 'SONG_SELECTED',
-    payload: song
+    type: SONG_SELECTED,
+    payload: song,
   };
 };
