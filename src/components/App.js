@@ -1,22 +1,18 @@
 import React from 'react';
 import SongList from './SongList';
-import { connect } from 'react-redux';
-import { selectSong } from '../actions';
 
 const App = () => {
   return (
-    <div>
-      <SongList />
-    </div>
+    <section className="section">
+      <div className="title">
+        <h2>Songs App</h2>
+        <div className="underline"></div>
+      </div>
+      <div className="section-center">
+        <SongList />
+      </div>
+    </section>
   );
 };
 
-const mapStateToProps = (state) => {
-  return {};
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {};
-};
-
-export default connect(mapDispatchToProps, mapStateToProps)(App);
+export default App;
